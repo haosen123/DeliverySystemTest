@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: account
+  profiles:
+      active: dev
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+#      discovery:
+#        enabled: true
+#        serviceId: configserver #连接的配置中心名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
